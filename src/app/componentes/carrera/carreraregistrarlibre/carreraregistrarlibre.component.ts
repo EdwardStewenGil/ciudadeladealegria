@@ -20,6 +20,8 @@ export class CarreraregistrarlibreComponent {
   usuarioDto: UsuarioDto[] = [];
   nuevoUsuario: UsuarioDto = { variable1: '', variable2: '', variable3: '', variable4: '', variable5: '', variable6: '', variable7: '', variable8: '', variable9: '', variable10: '', variable11: '', variable12: '', variable13: '', variable14: '', variable15: '', variable16: '', evento: 'carrera3k', };
   terminos = ""
+  menores = ""
+
   confircorreo = ""
   imagenPrevia: any;
   files: any = []
@@ -240,6 +242,9 @@ export class CarreraregistrarlibreComponent {
 
 
     this.nuevoUsuario.variable15 = String(this.x)
+    this.nuevoUsuario.variable6= this.tipoidemenor+this.generomenor+this.discapacidadmenor+this.sangremenor
+    this.nuevoUsuario.variable12= this.tipoidadulto+this.generoadulto+this.discapacidadadulto+this.sangreadulto+this.seleccionarDepartamento+this.seleccionarCiudad+this.comuna
+
 
 
 
@@ -284,68 +289,89 @@ export class CarreraregistrarlibreComponent {
     } else if (this.nuevoUsuario.variable5 == "") {
       Swal.fire('La talla de la camisa del menor debe ser diligenciada ')
 
-    } else if (this.nuevoUsuario.variable9 == "") {
-      Swal.fire('La comuna debe ser diligenciada ')
+    } else if (this.nuevoUsuario.variable7 == "") {
+      Swal.fire('El nombre del adulto debe ser diligenciado ')
 
-    } else if (this.nuevoUsuario.variable9 == "") {
-      Swal.fire('La comuna debe ser diligenciada ')
+    } else if (this.tipoidadulto == "") {
+      Swal.fire('El tipo de documento del adulto debe ser diligenciado ')
 
-    } else if (this.nuevoUsuario.variable9 == "") {
-      Swal.fire('La comuna debe ser diligenciada ')
+    } else if (this.nuevoUsuario.variable8 == "") {
+      Swal.fire('El numero de identificacion del documento debe ser diligenciado ')
 
-    } else if (String(this.seleccionarDepartamento) == "") {
-      Swal.fire('El departamento debe ser diligenciado ')
-      
-    } else if (String(this.seleccionarCiudad).length > 500) {
-      Swal.fire('Debes diligenciar el departamento y la ciudad ')
+    }  else if (this.nuevoUsuario.variable9 == "") {
+
+      Swal.fire('La edad del adulto debe ser diligenciado')
+
+    }
+
+ 
+
+  
+    else if (this.generoadulto == "") {
+
+      Swal.fire('El genero del adulto debe ser diligenciado')
+
+
+    }
+
+
+
+
+
+
+    else if (this.discapacidadadulto == "") {
+
+      Swal.fire('Debes diligenciar si tiene alguna discapacidad')
+
     }
     else if (this.nuevoUsuario.variable10 == "") {
 
-      Swal.fire('El nombre del adulto debe ser diligenciado')
-
-
+      Swal.fire('Debes diligenciar la eps del adulto')
 
     }
+    else if (this.sangreadulto == "") {
 
+      Swal.fire('Debes diligenciar el tipo de sangre del adulto')
+
+    }
     else if (this.nuevoUsuario.variable11 == "") {
 
-      Swal.fire('La cedula del adulto debe ser diligenciado')
+      Swal.fire('Debes diligenciar la talla de camisa dela dulto')
 
+    } else if (String(this.seleccionarDepartamento) == "") {
+      Swal.fire('El departamento debe ser diligenciado ')
+
+    } else if (String(this.seleccionarCiudad).length > 500) {
+      Swal.fire('Debes diligenciar el departamento y la ciudad ')
     }
 
-    else if (this.nuevoUsuario.variable12 == "") {
-
-      Swal.fire('El célular del adulto debe ser diligenciado')
-
-
-    }
-
-    else if (this.nuevoUsuario.variable12?.length != 10) {
+    else if (this.nuevoUsuario.variable13?.length != 10) {
 
       Swal.fire('El célular debe ser de 10 digitos')
 
-    }
-
-
-
-    else if (this.nuevoUsuario.variable13 == "") {
+    } else if (this.nuevoUsuario.variable14 == "") {
 
       Swal.fire('Correo electrónico no diligenciado')
 
-    } else if (validEmail.test(this.nuevoUsuario.variable13) == false) {
+    } else if (validEmail.test(this.nuevoUsuario.variable14) == false) {
 
       Swal.fire('Por favor diligenciar un correo valido. Ejemplo: caliciudaddeportiva@gmail.com')
 
     }
+    else if (this.comuna == "") {
 
+      Swal.fire('Se debe seleccionar la comuna')
 
-    else if (this.nuevoUsuario.variable14 == "") {
-
-      Swal.fire('Debes ingresar si el adulto trabaja en la secretaria de deporte y recreacion')
-
-    } else if (this.terminos == "") {
+    }
+    else if (this.terminos == "") {
 
       Swal.fire('Se debe aceptar los terminos y condiciones')
+
+    }
+
+    else if (this.menores == "") {
+
+      Swal.fire('Se debe aceptar la exoneracion  de menores')
 
     }
     else {
@@ -373,6 +399,18 @@ export class CarreraregistrarlibreComponent {
             this.nuevoUsuario.variable16 = ""
             this.emailval = ""
             this.fechaval = ""
+            this.tipoidemenor = ""
+            this.generomenor = ""
+            this.discapacidadmenor = ""
+            this.sangremenor = ""
+
+            this.comuna = ""
+
+            this.tipoidadulto = ""
+            this.generoadulto = ""
+            this.discapacidadadulto = ""
+            this.sangreadulto = ""
+
             this.x = Math.floor(Math.random() * (this.max - this.min + 1) + this.min);
 
 
@@ -404,6 +442,20 @@ export class CarreraregistrarlibreComponent {
           this.nuevoUsuario.variable14 = ""
           this.nuevoUsuario.variable15 = ""
           this.nuevoUsuario.variable16 = ""
+          this.emailval = ""
+          this.fechaval = ""
+          this.tipoidemenor = ""
+          this.generomenor = ""
+          this.discapacidadmenor = ""
+          this.sangremenor = ""
+
+          this.comuna = ""
+
+          this.tipoidadulto = ""
+          this.generoadulto = ""
+          this.discapacidadadulto = ""
+          this.sangreadulto = ""
+
           this.x = Math.floor(Math.random() * (this.max - this.min + 1) + this.min);
 
 

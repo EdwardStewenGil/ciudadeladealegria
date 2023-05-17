@@ -231,18 +231,20 @@
 
 
 
+
+
+
         <div class="form-floating mb-3">
             <input class="form-control fondo2 " name="variable8" id="variable8" [(ngModel)]="nuevoUsuario.variable8"
                 placeholder="variable8" required>
-            <label for="floatingPassword">Número de documento del Adulto</label>
+            <label for="floatingPassword">Numero de documento del adulto</label>
 
         </div>
 
 
-
         <div class="form-floating mb-3">
-            <input class="form-control fondo2 " name="variable1" id="variable1" [(ngModel)]="nuevoUsuario.variable9"
-                placeholder="variable1" required>
+            <input class="form-control fondo2 " name="variable9" id="variable9" [(ngModel)]="nuevoUsuario.variable9"
+                placeholder="variable9" required>
             <label for="floatingPassword">Edad del adulto</label>
 
         </div>
@@ -396,7 +398,7 @@
         <div class="form-floating mb-3 fondo1 q">
 
             <select class="form-select fondo1 " aria-label="Default select example" [(ngModel)]="seleccionarCiudad"
-                id="variable8" placeholder="variable8" name="variable8">
+                id="seleccionarCiudad" placeholder="seleccionarCiudad" name="seleccionarCiudad">
                 <option *ngFor="let ciudad of ciudades" value={{ciudad.id}}>{{ciudad.name}}</option>
             </select>
             <label for="floatingInput">Ciudad</label>
