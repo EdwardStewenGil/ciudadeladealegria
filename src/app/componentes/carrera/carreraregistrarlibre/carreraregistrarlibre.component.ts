@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { UsuarioDto } from '../../../modelos/usuario-dto';
 import { DepartamentoI, CiudadI } from 'src/app/modelos/ciudades';
 import { FormControl, Validators } from '@angular/forms';
-import { CiudadelaService } from '../../../servicios/ciudadela.service';
+import { CarreraService } from '../../../servicios/carrera.service';
 import { DepartamentosService } from '../../../servicios/departamentos.service';
 
 import Swal from 'sweetalert2'
@@ -64,7 +64,7 @@ export class CarreraregistrarlibreComponent {
 
 
   constructor(
-    private ciudadelaService: CiudadelaService, private departamentosService: DepartamentosService) { }
+    private carreraService: CarreraService, private departamentosService: DepartamentosService) { }
 
   ngOnInit(): void {
     this.departamentos = this.departamentosService.getDepartamentos();
@@ -376,7 +376,7 @@ export class CarreraregistrarlibreComponent {
     }
     else {
       console.log(this.nuevoUsuario)
-      this.ciudadelaService.createUserCiudadela(this.nuevoUsuario).subscribe(
+      this.carreraService.createUserCarrera(this.nuevoUsuario).subscribe(
         (data: any) => {
           if (data.status == 200) {
             Swal.fire('Felicidades ya el menor ya se encuentra participando en el evento con numero: ' + this.x)
