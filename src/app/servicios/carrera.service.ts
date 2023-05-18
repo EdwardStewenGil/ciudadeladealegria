@@ -29,4 +29,13 @@ export class CarreraService {
       this.respuesta
     );
   }
+
+
+  public ValidarCarrera(data: UsuarioDto): Observable<boolean> {
+    return this.httpClient.post<any>(
+      this.hosteo + 'caliciudaddeportiva/ValidarCarrera',
+      data,
+      this.respuesta
+    );
+  }
 }
