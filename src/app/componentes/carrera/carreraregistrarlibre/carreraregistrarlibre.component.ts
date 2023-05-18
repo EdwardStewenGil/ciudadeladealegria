@@ -203,7 +203,7 @@ export class CarreraregistrarlibreComponent {
       ]
     }
     const pdf = pdfMake.createPdf(pdfDefinition);
-    pdf.download('Ciudadela.pdf');
+    pdf.download('Carrera3k.pdf');
   }
 
 
@@ -350,7 +350,7 @@ export class CarreraregistrarlibreComponent {
       this.carreraService.createUserCarrera(this.nuevoUsuario).subscribe(
         (data: any) => {
           if (data.status == 200) {
-            Swal.fire('Felicidades ya el menor ya se encuentra participando en el evento con numero: ' + this.x)
+            Swal.fire('Felicidades ya se encuentran participando en el evento con numero de registro: ' + this.x)
             this.createPdf()
             this.nuevoUsuario.variable1 = ""
             this.nuevoUsuario.variable2 = ""
