@@ -30,6 +30,15 @@ export class CarreraService {
     );
   }
 
+  public createUserCarrera7k(data: UsuarioDto): Observable<boolean> {
+
+    return this.httpClient.post<any>(
+      this.hosteo + 'caliciudaddeportiva/createUserCarrera7k ',
+      data,
+      this.respuesta
+    );
+  }
+  
 
   public ValidarCarrera(data: UsuarioDto): Observable<boolean> {
     return this.httpClient.post<any>(
