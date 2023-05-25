@@ -14,8 +14,8 @@ export class CarreraService {
   respuesta = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
   };
-  hosteo = 'http://localhost:3306/'
- // hosteo = 'https://ccdepor.herokuapp.com/'
+  //hosteo = 'http://localhost:3306/'
+ hosteo = 'https://ccdepor.herokuapp.com/'
 
 
   constructor(private httpClient: HttpClient) { }
@@ -34,6 +34,15 @@ export class CarreraService {
 
     return this.httpClient.post<any>(
       this.hosteo + 'caliciudaddeportiva/createUserCarrera7k ',
+      data,
+      this.respuesta
+    );
+  }
+  
+
+  public ValidarCarrera(data: UsuarioDto): Observable<boolean> {
+    return this.httpClient.post<any>(
+      this.hosteo + 'caliciudaddeportiva/ValidarCarrera',
       data,
       this.respuesta
     );

@@ -39,7 +39,7 @@ export class CiudadelavalidarComponent {
       this.ciudadelaService.ValidarMenor(this.nuevoUsuario).subscribe(
         (data: any) => {
           if (data.status == 200) {
-            Swal.fire('El Menor con este documento se encuentra participando en la Ciudadela de la Alegria')
+            Swal.fire('La persona con este documento se encuentra participando en CICLOVIDA RUN 7K DE LA FAMILIA')
             this.nuevoUsuario = {}
 
 

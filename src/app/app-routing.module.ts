@@ -38,7 +38,7 @@ const routes: Routes = [
 
   //CIUDADELA
   { path: 'ciudadela', component: CiudadelaComponent, },
-  { path: 'ciudadela/validacion', component:  CiudadelavalidarComponent},
+  { path: 'carrera/validacion', component:  CiudadelavalidarComponent},
   { path: 'ciudadela/inscribirextrasval', component: CiudadelaregistrarlibreComponent, },
   { path: 'ciudadela/terminos', component: TerminosciudComponent, },
   { path: 'ciudadela/login', component: LoginciudComponent, },
@@ -52,7 +52,7 @@ const routes: Routes = [
   //CARRERA
   { path: 'carrera', component: CarreraComponent, },
   { path: 'carrera/validacion', component: CarreravalidarComponent, },
-  { path: 'carrera/inscribircodigo', component: CarreraregistrarcodigoComponent, },
+  { path: 'carrera/inscribirdiafinal', component: CarreraregistrarcodigoComponent, },
   { path: 'carrera/inscribirlibre', component: CarreraregistrarlibreComponent, },
   { path: 'carrera/login', component: LogincarreraComponent, },
   { path: 'carrera/login/inicio', component: IniciocarreraComponent, canActivate:[CarreraGuard] },
