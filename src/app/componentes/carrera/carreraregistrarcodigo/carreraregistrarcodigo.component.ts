@@ -18,7 +18,7 @@ export class CarreraregistrarcodigoComponent {
 
 
   usuarioDto: UsuarioDto[] = [];
-  nuevoUsuario: UsuarioDto = { variable1: '', variable2: '', variable3: '', variable4: '', variable5: '', variable6: '', variable7: '', variable8: '', variable9: '', variable10: '', variable11: '', variable12: '', variable13: '', variable14: '', variable15: '', variable16: '', evento: 'carrera7k', };
+  nuevoUsuario: UsuarioDto = { variable1: '', variable2: '', variable3: '', variable4: '', variable5: '', variable6: '', variable7: '', variable8: '', variable9: '', variable10: '', variable11: '', variable12: '', variable13: '', variable14: '', variable15: '', variable16: 'pendiente', evento: 'carrera7k', };
   terminos = ""
   terminosprincipal = ""
   pdfnombremenor = ""

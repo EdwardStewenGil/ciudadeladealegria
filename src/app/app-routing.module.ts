@@ -52,8 +52,8 @@ const routes: Routes = [
   //CARRERA
   { path: 'carrera', component: CarreraComponent, },
   { path: 'carrera/validacion', component: CarreravalidarComponent, },
-  { path: 'carrera/inscribirdiafinal', component: CarreraregistrarcodigoComponent, },
-  { path: 'carrera/inscribirlibre', component: CarreraregistrarlibreComponent, },
+  { path: 'carrera/inscribirreservafinal', component: CarreraregistrarcodigoComponent, },
+  { path: 'carrera/inscribirfabian', component: CarreraregistrarlibreComponent, },
   { path: 'carrera/login', component: LogincarreraComponent, },
   { path: 'carrera/login/inicio', component: IniciocarreraComponent, canActivate:[CarreraGuard] },
 
