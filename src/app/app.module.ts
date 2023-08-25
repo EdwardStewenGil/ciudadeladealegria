@@ -32,6 +32,8 @@ import { ValidarciudComponent } from './componentes/usuarios/validador/ciudadela
 import { NavbarciudComponent } from './componentes/usuarios/principales/navbarciud/navbarciud.component';
 import { IniciocarreraComponent } from './componentes/usuarios/validador/carrera/iniciocarrera/iniciocarrera.component';
 import { LogincarreraComponent } from './componentes/usuarios/validador/carrera/logincarrera/logincarrera.component';
+import { BaloncestoComponent } from './componentes/baloncesto/baloncesto/baloncesto.component';
+import { ContactoComponent } from './componentes/principales/contacto/contacto.component';
 
 
 
@@ -61,6 +63,8 @@ import { LogincarreraComponent } from './componentes/usuarios/validador/carrera/
     NavbarciudComponent,
     IniciocarreraComponent,
     LogincarreraComponent,
+    BaloncestoComponent,
+    ContactoComponent,
 
   ],
   imports: [

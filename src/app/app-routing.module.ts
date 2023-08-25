@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 import { InicioComponent } from './componentes/principales/inicio/inicio.component';
+import { ContactoComponent } from './componentes/principales/contacto/contacto.component';
+
 import { CarreraComponent } from './componentes/carrera/carrera/carrera.component';
 import { CarreravalidarComponent } from './componentes/carrera/carreravalidar/carreravalidar.component';
 import { CarreraregistrarcodigoComponent } from './componentes/carrera/carreraregistrarcodigo/carreraregistrarcodigo.component';
@@ -11,6 +13,7 @@ import { CiudadelaComponent } from './componentes/ciudadela/ciudadela/ciudadela.
 import { CiudadelaregistrarlibreComponent } from './componentes/ciudadela/ciudadelaregistrarlibre/ciudadelaregistrarlibre.component';
 import { CiudadelavalidarComponent } from './componentes/ciudadela/ciudadelavalidar/ciudadelavalidar.component';
 import { FutbolfamiliaComponent } from './componentes/futbolfamilia/futbolfamilia/futbolfamilia.component';
+import { BaloncestoComponent } from './componentes/baloncesto/baloncesto/baloncesto.component';
 import { TerminosciudComponent } from './componentes/ciudadela/terminosciud/terminosciud.component';
 import { LoginadminComponent } from './componentes/usuarios/administrador/loginadmin/loginadmin.component';
 import { InicioadminComponent } from './componentes/usuarios/administrador/inicioadmin/inicioadmin.component';
@@ -34,11 +37,13 @@ const routes: Routes = [
   //INICIO
 
   { path: '', component: InicioComponent, },
+  { path: 'contacto', component: ContactoComponent, },
+
 
 
   //CIUDADELA
   { path: 'ciudadela', component: CiudadelaComponent, },
-  { path: 'carrera/validacion', component:  CiudadelavalidarComponent},
+  { path: 'ciudadela/validacion', component:  CiudadelavalidarComponent},
   { path: 'ciudadela/inscribirextrasval', component: CiudadelaregistrarlibreComponent, },
   { path: 'ciudadela/terminos', component: TerminosciudComponent, },
   { path: 'ciudadela/login', component: LoginciudComponent, },
@@ -62,6 +67,11 @@ const routes: Routes = [
 
   { path: 'futbolfamilia', component: FutbolfamiliaComponent, },
 
+  //BALONCESTO
+
+  { path: 'baloncestofamilia', component: BaloncestoComponent, },
+
+
 
 
 
@@ -81,7 +91,7 @@ const routes: Routes = [
 
   
 
-  { path: '', pathMatch: 'full', redirectTo: ' ' },
+  { path: '', pathMatch: 'full', redirectTo: '' },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 
