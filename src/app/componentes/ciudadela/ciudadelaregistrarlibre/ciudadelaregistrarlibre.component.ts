@@ -106,8 +106,7 @@ export class CiudadelaregistrarlibreComponent {
             headerRows: 0,
             body: [
               [{ text: 'Lugar del Evento:', style: 'tableHeader', bold: true }, 'Canchas Panamericanas'],
-              [{ text: 'Hora de inicio del evento:', style: 'tableHeader', bold: true }, 'Domingo 7 de mayo de 2023 02:00 pm'],
-              [{ text: 'Hora de Finalizacion del evento: ', style: 'tableHeader', bold: true }, 'Domingo 7 de mayo de 2023 05:00 pm'],
+              [{ text: 'Hora de inicio del evento:', style: 'tableHeader', bold: true }, 'Domingo 03 de Septiembre de 2023'],
 
             ]
           },
@@ -127,7 +126,7 @@ export class CiudadelaregistrarlibreComponent {
           columns: [
             {
               width: '100%',
-              text: '1. La Ciudadela de la Alegría conmemorará el mes de la Niñez y la Recreación con toda la Familia Este domingo 7 de Mayo, Te esperamos para que disfrutemos juntos la sexta versión de esta Ciudadela de la Alegría donde el juego y la recreación serán protagonistas! #CaliCiudadDeportiva'
+              text: '1. La Ciudadela de la Alegría conmemorará el mes de la Niñez y la Recreación con toda la Familia Este Domingo 03 de Septiembre de 2023, Te esperamos para que disfrutemos juntos la sexta versión de esta Ciudadela de la Alegría donde el juego y la recreación serán protagonistas! #CaliCiudadDeportiva'
             },
 
 

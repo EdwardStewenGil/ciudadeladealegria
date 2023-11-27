@@ -40,7 +40,7 @@ export class CarreravalidarComponent {
       this.ciudadelaService.ValidarMenor(this.nuevoUsuario).subscribe(
         (data: any) => {
           if (data.status == 200) {
-            Swal.fire('La persona con este documento de identidad ya se encuentra participando en el evento')
+            Swal.fire('La persona con este documento de identidad no se encuentra participando en este evento')
             this.nuevoUsuario = {}
 
 

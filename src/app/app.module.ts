@@ -34,6 +34,7 @@ import { IniciocarreraComponent } from './componentes/usuarios/validador/carrera
 import { LogincarreraComponent } from './componentes/usuarios/validador/carrera/logincarrera/logincarrera.component';
 import { BaloncestoComponent } from './componentes/baloncesto/baloncesto/baloncesto.component';
 import { ContactoComponent } from './componentes/principales/contacto/contacto.component';
+import { TerminoscarreraComponent } from './componentes/carrera/terminoscarrera/terminoscarrera.component';
 
 
 
@@ -65,6 +66,7 @@ import { ContactoComponent } from './componentes/principales/contacto/contacto.c
     LogincarreraComponent,
     BaloncestoComponent,
     ContactoComponent,
+    TerminoscarreraComponent,
 
   ],
   imports: [

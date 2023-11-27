@@ -27,6 +27,7 @@ import { LogincarreraComponent } from './componentes/usuarios/validador/carrera/
 import { AdministradorGuard } from './servicios/guardas/administrador.guard';
 import { CarreraGuard } from './servicios/guardas/carrera.guard';
 import { CiudadelaGuard } from './servicios/guardas/ciudadela.guard';
+import { TerminoscarreraComponent } from './componentes/carrera/terminoscarrera/terminoscarrera.component';
 
 
 
@@ -45,7 +46,7 @@ const routes: Routes = [
   { path: 'ciudadela', component: CiudadelaComponent, },
   { path: 'ciudadela/validacion', component:  CiudadelavalidarComponent},
   { path: 'ciudadela/inscribirextrasval', component: CiudadelaregistrarlibreComponent, },
-  { path: 'ciudadela/terminos', component: TerminosciudComponent, },
+  { path: 'terminos', component: TerminosciudComponent, },
   { path: 'ciudadela/login', component: LoginciudComponent, },
   { path: 'ciudadela/login/inicio', component: IniciociudComponent,  canActivate:[CiudadelaGuard] },
 
@@ -57,8 +58,9 @@ const routes: Routes = [
   //CARRERA
   { path: 'carrera', component: CarreraComponent, },
   { path: 'carrera/validacion', component: CarreravalidarComponent, },
-  { path: 'carrera/inscribirreservafinal', component: CarreraregistrarcodigoComponent, },
-  { path: 'carrera/inscribirfabian', component: CarreraregistrarlibreComponent, },
+  { path: 'carrera/inscribirFinal', component: CarreraregistrarcodigoComponent, },
+  { path: 'carrera/terminos', component: TerminoscarreraComponent, },
+  { path: 'carrera/inscribir', component: CarreraregistrarlibreComponent, },
   { path: 'carrera/login', component: LogincarreraComponent, },
   { path: 'carrera/login/inicio', component: IniciocarreraComponent, canActivate:[CarreraGuard] },
 
