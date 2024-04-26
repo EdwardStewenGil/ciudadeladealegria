@@ -11,8 +11,9 @@
   <table datatable class="row-border hover"  datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger">
     <thead>
       <tr>
-        <th scope="col">Nombre </th>
-        <th scope="col">Apellido </th>
+        <th scope="col">Nombre  Menor</th>
+        <th scope="col">Identificacion </th>
+        <th scope="col">Nombre  Adulto</th>
         <th scope="col">Identificacion </th>
         <th scope="col">Celular</th>
         <th scope="col">Correo</th>
@@ -28,13 +29,14 @@
   </thead>
   <tbody>
     <tr *ngFor="let usuario of usuarioDto">
-        <td>{{usuario.variable3}}</td>
-        <td>{{usuario.variable4}}</td>
+        <td>{{usuario.variable2}} {{usuario.variable3}}</td>
         <td>{{usuario.variable1}}</td>
-        <td>{{usuario.variable6}}</td>
-        <td>{{usuario.variable7}}</td>
-        <td>{{usuario.variable15}}</td>
-        <td>{{usuario.variable16}}</td>
+        <td>{{usuario.variable9}} {{usuario.variable10}}</td>
+        <td>{{usuario.variable12}}</td>
+        <td>{{usuario.variable17}}</td>
+        <td>{{usuario.variable18}}</td>
+        <td>{{usuario.variable20}}</td>
+        <td>{{usuario.variable21}}</td>
 
 
 

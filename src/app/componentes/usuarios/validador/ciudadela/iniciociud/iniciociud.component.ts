@@ -23,7 +23,7 @@ export class IniciociudComponent implements OnInit {
 
 
 
-  nuevoUsuario: UsuarioDto = { variable1: '', variable2: '', variable3: '', variable4: '', variable5: '', variable6: '', variable7: '', variable8: '', variable9: '', variable10: '', variable11: '', variable12: '', variable13: 'pendiente', evento: 'ciudadela4' };
+  nuevoUsuario: UsuarioDto = { variable1: '', variable2: '', variable3: '', variable4: '', variable5: '', variable6: '', variable7: '', variable8: '', variable9: '', variable10: '', variable11: '', variable12: '', variable13: '', variable14: '', variable15: '', variable16: '', variable17: '', variable18: '', variable19: '', variable20: '', variable21: '', variable22: '', variable23: '', evento: 'ciud28042024' };
 
   nuevoregalo: RegaloDto = { codigoregalo: "", idusuariofin: "", idadminfin: "", numero: "" };
 
@@ -229,23 +229,27 @@ export class IniciociudComponent implements OnInit {
       Swal.fire('Identificacion no diligenciada')
     }
 
+    
+
     else {
       this.usuarioservice.GetRegalopersonamenor(this.nuevoUsuario).subscribe(
         (data: any) => {
           if (data.status == 200) {
             this.usuarioDto1 = data.payload;
             this.formModal.show();
-
+            console.log(this.nuevoUsuario)
 
 
 
           } else {
 
             Swal.fire(data.payload.message)
+            console.log(this.nuevoUsuario)
           }
         }, (error) => {
           console.log(error);
           Swal.fire('error al intentar registrate por favor intentalo mas tarde')
+          console.log(this.nuevoUsuario)
 
         }
       );

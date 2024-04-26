@@ -43,9 +43,8 @@ const routes: Routes = [
 
 
   //CIUDADELA
-  { path: 'ciudadela', component: CiudadelaComponent, },
-  { path: 'ciudadela/validacion', component:  CiudadelavalidarComponent},
-  { path: 'ciudadela/inscribirextrasval', component: CiudadelaregistrarlibreComponent, },
+  { path: 'ciudadela/validar', component:  CiudadelavalidarComponent},
+  { path: 'ciudadela', component: CiudadelaregistrarlibreComponent, },
   { path: 'terminos', component: TerminosciudComponent, },
   { path: 'ciudadela/login', component: LoginciudComponent, },
   { path: 'ciudadela/login/inicio', component: IniciociudComponent,  canActivate:[CiudadelaGuard] },
@@ -56,22 +55,7 @@ const routes: Routes = [
 
 
   //CARRERA
-  { path: 'carrera', component: CarreraComponent, },
-  { path: 'carrera/validacion', component: CarreravalidarComponent, },
-  { path: 'carrera/inscribirFinal', component: CarreraregistrarcodigoComponent, },
-  { path: 'carrera/terminos', component: TerminoscarreraComponent, },
-  { path: 'carrera/inscribir', component: CarreraregistrarlibreComponent, },
-  { path: 'carrera/login', component: LogincarreraComponent, },
-  { path: 'carrera/login/inicio', component: IniciocarreraComponent, canActivate:[CarreraGuard] },
 
-
-  //FUTBOLFAMILIA
-
-  { path: 'futbolfamilia', component: FutbolfamiliaComponent, },
-
-  //BALONCESTO
-
-  { path: 'baloncestofamilia', component: BaloncestoComponent, },
 
 
 
